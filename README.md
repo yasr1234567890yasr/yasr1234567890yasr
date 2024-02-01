@@ -1,13 +1,81 @@
-- 👋 Hi, I’m @yasr1234567890yasr
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
-
-<!---
-yasr1234567890yasr/yasr1234567890yasr is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
-Für die 
+{
+  "name": "JMTHON",
+  "description": " Arabic jmthonc Powerful & Safe based on Telethon",
+  "logo": "https://telegra.ph/file/d90dfa4c680c0d0d2e652.jpg",
+  "keywords": [
+    "plugin",
+    "modular",
+    "productivity"
+  ],
+  "repository": "https://github.com/thejmthon/Keploy",
+  "website": "#TODO",
+  "success_url": "#TODO",
+  "env": {
+    "ALIVE_NAME": {
+      "description": "هنا ضع اسم التلجرام الخاص بك",
+      "value": ""
+    },
+    "APP_ID": {
+      "description": "هنا ضع الاب ايدي الخاص بك يتكون من 8 ارقام", 
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "هنا ضع الايبي هاش الخاص بك",
+      "value": ""
+    },
+    "ENV": {
+      "description": "لا تغير هذه القيمه",
+      "value": "ANYTHING"
+    },
+    "COMMAND_HAND_LER": {
+      "description": "لا تغير هذه القيمه",
+      "value": "."
+    },
+    "STRING_SESSION": {
+      "description": "هنا ضع كود سيشن تيليثون او بايروجرام كود تيرمكس الخاص بك",
+      "value": "",
+      "required": false
+    },
+    "TG_BOT_TOKEN": {
+      "description": "هنا ضع توكن بوتك الذي صنعته",
+      "value": ""
+    },
+    "HEROKU_API_KEY": {
+      "description": "هنا ضع الايبي كي الخاص بحساب هيروكو من هذا الرابط https://dashboard.heroku.com/account",
+      "value": "",
+      "required": false
+    },
+    "HEROKU_APP_NAME": {
+      "description": "اسم التطبيق",
+      "value": "",
+      "required": false
+    },
+    "TZ": {
+      "description": "المنطقه الزمنيه من القارة الخاصه بك وعاصمه بلدك يجب ان يكون اول حرف كبير",
+      "value": "Asia/Baghdad",
+      "required": false
+    }
+  },
+  "addons": [{
+    "plan": "heroku-postgresql",
+    "options": {
+      "version": "12"
+    }
+  }],
+  "buildpacks": [{
+    "url":"https://github.com/heroku/heroku-buildpack-google-chrome"
+  },{
+    "url":"https://github.com/heroku/heroku-buildpack-chromedriver"
+  },{
+    "url": "https://github.com/riganf/heroku-buildpack-p7zip"
+  },{
+    "url": "https://github.com/heroku/heroku-buildpack-apt.git"
+  },{
+    "url": "https://github.com/chrismytton/heroku-buildpack-jq"
+  },{
+    "url": "https://github.com/rahulps1000/heroku-buildpack-nodejs"
+  },{
+    "url": "heroku/python"
+  }],
+  "stack": "heroku-22"
+}
